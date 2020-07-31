@@ -11,6 +11,12 @@ var confirmNumChar = confirm("Click OK to confirm including number characters.")
 var confirmLowCaseChar = confirm("Click OK to confirm including lower case characters.");
 var confirmUpCaseChar = confirm("Click OK to confirm including upper case characters.");
 
+console.log(charCount);
+console.log(confirmSpecChar);
+console.log(confirmNumChar);
+console.log(confirmLowCaseChar);
+console.log(confirmUpCaseChar);
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
