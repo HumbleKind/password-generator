@@ -15,7 +15,10 @@ var confirmLowCaseChar = confirm("Click OK to confirm including lower case chara
 var confirmUpCaseChar = confirm("Click OK to confirm including upper case characters.");
 var masterArr = []
 
-// test code for picking random character
+// test logging array addition
+console.log(specialChar + numbers);
+
+// test code for logging random character
 var random = Math.floor(Math.random() * specialChar.length);
 console.log(specialChar[random]);
 
