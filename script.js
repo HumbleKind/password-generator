@@ -13,7 +13,11 @@ var confirmSpecChar = confirm("Click OK to confirm including special characters.
 var confirmNumChar = confirm("Click OK to confirm including number characters.");
 var confirmLowCaseChar = confirm("Click OK to confirm including lower case characters.");
 var confirmUpCaseChar = confirm("Click OK to confirm including upper case characters.");
-var masterArr = 
+var masterArr = []
+
+// test code for picking random character
+var random = Math.floor(Math.random() * specialChar.length);
+console.log(specialChar[random]);
 
 // confirm user input is being accurately collected
 // console.log(charCount);
