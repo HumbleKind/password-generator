@@ -1,21 +1,25 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
+// create variables from arrays of possible alpha-numeric possibilities
 var specialChar = ["~","`","!","@","#","$","%","^","&","*","(",")","_","+","-","=","{","}","[","]",":",";","<",">","?",".","/","|"];
 var numbers = [0,1,2,3,4,5,6,7,8,9];
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
+// create variables to collect user alpha-numeric password parameters
 var charCount = prompt("How many characters would you like your password to contain?");
 var confirmSpecChar = confirm("Click OK to confirm including special characters.");
 var confirmNumChar = confirm("Click OK to confirm including number characters.");
 var confirmLowCaseChar = confirm("Click OK to confirm including lower case characters.");
 var confirmUpCaseChar = confirm("Click OK to confirm including upper case characters.");
 
-console.log(charCount);
-console.log(confirmSpecChar);
-console.log(confirmNumChar);
-console.log(confirmLowCaseChar);
-console.log(confirmUpCaseChar);
+// confirm user input is being accurately collected
+// console.log(charCount);
+// console.log(confirmSpecChar);
+// console.log(confirmNumChar);
+// console.log(confirmLowCaseChar);
+// console.log(confirmUpCaseChar);
 
 // Write password to the #password input
 function writePassword() {
