@@ -1,4 +1,4 @@
-// Assignment Code
+//// Assignment Code
 var generateBtn = document.querySelector("#generate");
 
 // create variables from arrays of possible alpha-numeric possibilities
@@ -13,6 +13,7 @@ var confirmSpecChar = confirm("Click OK to confirm including special characters.
 var confirmNumChar = confirm("Click OK to confirm including number characters.");
 var confirmLowCaseChar = confirm("Click OK to confirm including lower case characters.");
 var confirmUpCaseChar = confirm("Click OK to confirm including upper case characters.");
+var masterArr = 
 
 // confirm user input is being accurately collected
 // console.log(charCount);
@@ -21,7 +22,7 @@ var confirmUpCaseChar = confirm("Click OK to confirm including upper case charac
 // console.log(confirmLowCaseChar);
 // console.log(confirmUpCaseChar);
 
-// Write password to the #password input
+//// Write password to the #password input
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
@@ -30,5 +31,11 @@ function writePassword() {
 
 }
 
-// Add event listener to generate button
+//// add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
+
+// when button is pushed ...
+// run a loop equal to 'charCount',
+// that randomly picks an alpha-numeric character,
+// from a master array generated with parameters created from user input,
+// and prints result to card body
