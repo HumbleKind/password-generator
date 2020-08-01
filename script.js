@@ -31,9 +31,12 @@ var masterArr = []
 
 // test logging pushed user selected parameter ...
 if (confirmSpecChar) {
-  masterArr.push(specialChar);
-  console.log(masterArr[0][3]);
+  // masterArr.push(specialChar);
+  masterArr = masterArr.concat(specialChar)
+  console.log(masterArr);
 }
+
+
 
 //// Write password to the #password input
 function writePassword() {
