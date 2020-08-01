@@ -7,11 +7,9 @@ var numbers = [0,1,2,3,4,5,6,7,8,9];
 var lowerCase = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
 var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
 
+// initialize variables ...
 var charCount;
 var masterArr;
-
-// create variables to collect user alpha-numeric password parameters ...
-
 
 // confirm user input is being accurately collected ...
 // console.log(charCount);
@@ -27,9 +25,6 @@ var masterArr;
 // test logging array addition ...
 // console.log(specialChar + numbers);
 
-// test logging pushed user selected parameter ...
-
-
 function generatePassword() {
   var returnPassword = "";
   for (var i = 0; i < charCount; i++) {
@@ -41,6 +36,7 @@ function generatePassword() {
 
 //// Write password to the #password input
 function writePassword() {
+  // create variables to collect user alpha-numeric password parameters ...
   charCount = prompt("How many characters would you like your password to contain?");
   var confirmSpecChar = confirm("Click OK to confirm including special characters.");
   var confirmNumChar = confirm("Click OK to confirm including number characters.");
@@ -48,14 +44,24 @@ function writePassword() {
   var confirmUpCaseChar = confirm("Click OK to confirm including upper case characters.");
   masterArr = []
 
+  // test logging pushed user selected parameter ...
   if (confirmSpecChar) {
     // masterArr.push(specialChar);
     masterArr = masterArr.concat(specialChar)
     console.log(masterArr);
   }
   
+  if (confirmNumChar) {
+    masterArr = masterArr.concat(numbers)
+    console.log(masterArr);
+  }
+
+  if (confirmLowCaseChar) {
+    masterArr = masterArr.concat(lowerCase)
+    console.log(masterArr);
+  }
+
   if (confirmUpCaseChar) {
-    // masterArr.push(specialChar);
     masterArr = masterArr.concat(upperCase)
     console.log(masterArr);
   }
