@@ -43,8 +43,12 @@ if (confirmUpCaseChar) {
 }
 
 function generatePassword() {
-  var random = Math.floor(Math.random() * masterArr.length);
-  returnpassword = returnpassword + masterArr[random];
+  var returnPassword = "";
+  for (var i = 0; i < charCount; i++) {
+    var random = Math.floor(Math.random() * masterArr.length);
+    returnPassword = returnPassword + masterArr[random];
+  }
+  return returnPassword;
 }
 
 //// Write password to the #password input
