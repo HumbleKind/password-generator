@@ -36,7 +36,11 @@ if (confirmSpecChar) {
   console.log(masterArr);
 }
 
-
+if (confirmUpCaseChar) {
+  // masterArr.push(specialChar);
+  masterArr = masterArr.concat(upperCase)
+  console.log(masterArr);
+}
 
 //// Write password to the #password input
 function writePassword() {
