@@ -23,8 +23,8 @@ var masterArr = []
 // console.log(confirmUpCaseChar);
 
 // test code for logging random character ...
-// var random = Math.floor(Math.random() * specialChar.length);
-// console.log(specialChar[random]);
+var random = Math.floor(Math.random() * specialChar.length);
+console.log(specialChar[random]);
 
 // test logging array addition ...
 // console.log(specialChar + numbers);
@@ -40,6 +40,11 @@ if (confirmUpCaseChar) {
   // masterArr.push(specialChar);
   masterArr = masterArr.concat(upperCase)
   console.log(masterArr);
+}
+
+function generatePassword() {
+  var random = Math.floor(Math.random() * masterArr.length);
+  returnpassword = returnpassword + masterArr[random];
 }
 
 //// Write password to the #password input
