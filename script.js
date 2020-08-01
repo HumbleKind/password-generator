@@ -25,17 +25,7 @@ var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 // console.log(specialChar + numbers);
 
 // test logging pushed user selected parameter ...
-if (confirmSpecChar) {
-  // masterArr.push(specialChar);
-  masterArr = masterArr.concat(specialChar)
-  console.log(masterArr);
-}
 
-if (confirmUpCaseChar) {
-  // masterArr.push(specialChar);
-  masterArr = masterArr.concat(upperCase)
-  console.log(masterArr);
-}
 
 function generatePassword() {
   var returnPassword = "";
@@ -54,6 +44,19 @@ function writePassword() {
   var confirmLowCaseChar = confirm("Click OK to confirm including lower case characters.");
   var confirmUpCaseChar = confirm("Click OK to confirm including upper case characters.");
   var masterArr = []
+
+  if (confirmSpecChar) {
+    // masterArr.push(specialChar);
+    masterArr = masterArr.concat(specialChar)
+    console.log(masterArr);
+  }
+  
+  if (confirmUpCaseChar) {
+    // masterArr.push(specialChar);
+    masterArr = masterArr.concat(upperCase)
+    console.log(masterArr);
+  }
+
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
