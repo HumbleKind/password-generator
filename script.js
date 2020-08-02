@@ -48,22 +48,19 @@ function writePassword() {
   if (confirmSpecChar) {
     // masterArr.push(specialChar);
     masterArr = masterArr.concat(specialChar)
-    console.log(masterArr);
+    // console.log(masterArr);
   }
   
   if (confirmNumChar) {
     masterArr = masterArr.concat(numbers)
-    console.log(masterArr);
   }
 
   if (confirmLowCaseChar) {
     masterArr = masterArr.concat(lowerCase)
-    console.log(masterArr);
   }
 
   if (confirmUpCaseChar) {
     masterArr = masterArr.concat(upperCase)
-    console.log(masterArr);
   }
 
   var password = generatePassword();
